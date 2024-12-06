@@ -48,7 +48,7 @@ cp4/
 │   ├── styles.css           # Front-end styling
 │   ├── scripts/
 │   │   ├── main.js          # Client-side JS to interact with API
-│   │   └── utils.js         # Helper functions (e.g., error handling)
+│   │   └── utils.js         # Helper functions (e.g., qs and qsa)
 ├── data/
 │   ├── games.json           # JSON file storing game data
 │   ├── reviews.json         # JSON file storing reviews
