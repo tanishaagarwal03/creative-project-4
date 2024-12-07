@@ -136,11 +136,11 @@ returned to the client to indicate that it should not display anything!
 
 -----
 
-### Tanisha Edit
+## Tanisha Edit
 
 ## Endpoints
 
-# 1. `GET /promotions`
+### 1. `GET /promotions`
 **Description**: Returns a list of promotions for gifts.
 **Query Parameters**:
 - `price`: Filter games with price less than or equal to this value.
@@ -163,7 +163,7 @@ returned to the client to indicate that it should not display anything!
 ]
 ```
 
-# 2. POST /game-requests
+### 2. POST /game-requests
 
 **Example Request**:
 
