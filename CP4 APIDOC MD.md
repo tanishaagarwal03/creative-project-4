@@ -16,8 +16,8 @@ TODO: Add promotions/gift ideas endpoints
 **Returned Data Format**: JSON
 
 **Description:**
-Returns a JSON collection of products that are availabe on the game/gift store, which can 
-be separated out into different categories (TODO: specify once we choose what we want to do)
+Returns a JSON collection of products that are availabe on the electronic game store, which can 
+be separated out into different categories
 
 **Parameters**
 * category=_____ (optional -> chosen by dropdown HTML component, default to All)
@@ -25,9 +25,7 @@ be separated out into different categories (TODO: specify once we choose what we
 
 **Example Requests:** 
 `products?category='All'`
-TODO: Choose an idea and then pick example
 `products?category='Xbox'`
-`products?category='Decorations'`
 
 **Example Response:**
 ```json
@@ -53,24 +51,18 @@ TODO: Choose an idea and then pick example
         "price": 30
       }
     ],
-    "Decorations": [
+    "PS4": [
       {
-        "name": "Curtains Royal",
-        "image": "curtain.jpg",
-        "description": "The fanciest curtain ever",
+        "name": "Spiderman",
+        "image": "spiderman.jpg",
+        "description": "Newest spiderman adventure",
         "price": 30
       },
       {
-        "name": "Candles",
-        "image": "candle.png",
-        "description": "The best selling candle, smells like a million bucks",
+        "name": "Batman",
+        "image": "batman.png",
+        "description": "Dark Knights adventures ",
         "price": 40
-      },
-      {
-        "name": "Wall Art",
-        "image": "wall-art.jpg",
-        "description": "Modernism at its finest",
-        "price": 50
       }
     ]
   }
@@ -121,7 +113,6 @@ Grabs comments made by any user and returns it to the client to display!
 **Example Request:** `/comments`
 
 **Example Response:**
-TODO: Remove one of the resposnes based on what we choose
 {
     "comments": [
       {
@@ -134,11 +125,6 @@ TODO: Remove one of the resposnes based on what we choose
         "title": "I mean its alright",
         "message": "Gamestop though >",
       },
-      {
-        "name": "C",
-        "title": "We love it here",
-        "message": "Bed Bath and Beyond can't compare",
-      }
     ]
 }
 
