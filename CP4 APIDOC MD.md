@@ -7,9 +7,10 @@ The clients can get information that is available for the current products that 
 TODO: Add information about promotions and gift ideas. 
 
 Summary of endpoints:
-* GET /products
-* POST /comment
-TODO: Add promotions/gift ideas endpoints
+* GET /categories
+* GET /promotions
+* POST /suggestions
+* POST /reviews
 ...
 
 ## *GET /products*
@@ -131,3 +132,55 @@ Grabs comments made by any user and returns it to the client to display!
 **Error Handling:**
 If there are no comments that have been made, then a message can be
 returned to the client to indicate that it should not display anything!
+
+
+-----
+
+###Tanisha Edit
+
+## Endpoints
+
+### 1. `GET /promotions`
+**Description**: Returns a list of promotions for gifts.
+**Query Parameters**:
+- `price`: Filter games with price less than or equal to this value.
+- `category`: Filter games by category.
+- `in_stock` (optional): Filter games that are in stock.
+
+**Example**:
+`GET /promotions?price_min=30&category=exclusive`
+
+**Response**:
+```json
+[
+    {
+        "id": 2,
+        "name": "Exclusive Gift Set",
+        "price": 49.99,
+        "category": "exclusive",
+        "description": "A curated set of our best-selling gifts."
+    }
+]
+```
+
+### 2. POST /game-requests
+
+**Example Request**:
+
+POST /game-requests
+{
+    "name": "Tanisha",
+    "idea": "Mario Kart"
+}
+
+**Example Response**:
+{
+    "message": "Gift idea submitted successfully",
+    "request": {
+        "id": 1,
+        "name": "Tanisha",
+        "idea": "Mario Kart",
+    }
+}
+
+
