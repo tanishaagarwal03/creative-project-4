@@ -1,10 +1,10 @@
 # Creative Project 4: 'X' Store API (not finalised yet)
 
 ## Overview
-This project implements a **Store API** using **Node.js** and **promise-mysql** to support a simple front-end that interacts with the API through AJAX and fetch.
+This project implements a **Store API** using **Node.js** and **express** to support a simple front-end that interacts with the API through AJAX and fetch.
 
 ## Goals
-- Build a Node.js web service to expose game data via multiple endpoints.
+- Build a Node.js/express web service to expose game data via multiple endpoints.
 - Dynamically load data on the front-end using `fetch`.
 - Provide both JSON and plain text responses from the API.
 - Implement proper error handling with descriptive messages for invalid requests.
