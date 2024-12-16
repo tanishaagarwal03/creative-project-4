@@ -1,10 +1,10 @@
 # Creative Project 4: 'X' Store API (not finalised yet)
 
 ## Overview
-This project implements a **Store API** using **Node.js** and **Express** to support a simple front-end that interacts with the API through AJAX and fetch.
+This project implements a **Store API** using **Node.js** and **promise-mysql** to support a simple front-end that interacts with the API through AJAX and fetch.
 
 ## Goals
-- Build a Node.js/Express web service to expose game data via multiple endpoints.
+- Build a Node.js web service to expose game data via multiple endpoints.
 - Dynamically load data on the front-end using `fetch`.
 - Provide both JSON and plain text responses from the API.
 - Implement proper error handling with descriptive messages for invalid requests.
@@ -55,10 +55,6 @@ cp4/
 ├── app.js                   # Node.js/Express web service
 └── package.json             # Node.js project configuration
 ``` 
-
-
-## API Documentation
-API details, including request/response schemas and example usage, are documented in `APIDOC.md`.
 
 ## Citations
 All third-party libraries and resources are properly cited in the footer of the application or source files.
